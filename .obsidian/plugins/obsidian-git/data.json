@@ -1,6 +1,6 @@
 {
   "commitMessage": "{{numFiles}} files changed: {{date}}",
-  "autoCommitMessage": "vault backup: {{date}}",
+  "autoCommitMessage": "{{numFiles}} files changed: {{date}}",
   "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
   "autoSaveInterval": 0,
   "autoPushInterval": 0,

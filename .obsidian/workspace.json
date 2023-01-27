@@ -11,12 +11,10 @@
             "id": "3b2775d5096c8cf2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "diff-view",
               "state": {
-                "file": "笔记/202301271706.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
+                "file": ".obsidian/plugins/obsidian-git/data.json",
+                "staged": false
               }
             }
           },
@@ -79,8 +77,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -100,7 +97,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "笔记/202301271706.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +113,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "笔记/202301271706.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,9 +134,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "笔记/202301271706.md"
-              }
+              "state": {}
             }
           },
           {
@@ -172,8 +165,8 @@
   },
   "active": "3b2775d5096c8cf2",
   "lastOpenFiles": [
-    "笔记/202301271703.md",
     "笔记/202301271706.md",
+    "笔记/202301271703.md",
     "笔记/202301271701.md",
     "笔记/202301271652.md",
     "笔记/202301271338.md",
