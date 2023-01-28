@@ -1,0 +1,31 @@
+{
+	"nodes":[
+		{"id":"89bd739cc8e77d29","x":-759,"y":-369,"width":151,"height":60,"type":"text","text":"命令行参数"},
+		{"id":"d55dd38b1d099c3f","x":-17,"y":-369,"width":75,"height":50,"type":"text","text":"链接"},
+		{"id":"c59af2b734c78722","x":-486,"y":-385,"width":308,"height":92,"type":"text","text":"可选参数不同但问题相同；\n第一次：howdoi slice a list\n第二次：howdoi --json slice a list"},
+		{"id":"301cff1641145976","x":411,"y":-369,"width":191,"height":60,"type":"text","text":"缓存文件"},
+		{"id":"3ed02b1af0976eba","x":-17,"y":-632,"width":75,"height":50,"type":"text","text":"答案"},
+		{"id":"23f580a5bc016392","x":-486,"y":-662,"width":250,"height":121,"type":"text","text":"完全相同；\n第一次：howdoi slice a list\n第二次：howdoi slice a list"},
+		{"id":"f2e54b5485275416","x":-15,"y":-71,"width":101,"height":50,"type":"text","text":"网页源码"},
+		{"id":"16bd3398fb0cb300","x":-486,"y":-86,"width":313,"height":87,"type":"text","text":"问题不同但构造的链接相同；\n第一次：howdoi slice a list\n第二次：howdoi slice a python list"},
+		{"id":"9fa1b2b81f7283c2","x":-192,"y":104,"width":250,"height":60,"type":"text","text":"无法匹配任何缓存文件"}
+	],
+	"edges":[
+		{"id":"3b65c062ccd1c07f","fromNode":"89bd739cc8e77d29","fromSide":"right","toNode":"23f580a5bc016392","toSide":"left"},
+		{"id":"6c4e4eb900ace5fb","fromNode":"89bd739cc8e77d29","fromSide":"right","toNode":"c59af2b734c78722","toSide":"left"},
+		{"id":"a36b6a11eaf1a77a","fromNode":"89bd739cc8e77d29","fromSide":"right","toNode":"16bd3398fb0cb300","toSide":"left"},
+		{"id":"80fe9fd86c58c242","fromNode":"23f580a5bc016392","fromSide":"right","toNode":"3ed02b1af0976eba","toSide":"left"},
+		{"id":"21d39fd52c63ade4","fromNode":"3ed02b1af0976eba","fromSide":"left","toNode":"23f580a5bc016392","toSide":"right","label":"匹配"},
+		{"id":"50b3886bb34a4bdc","fromNode":"c59af2b734c78722","fromSide":"right","toNode":"d55dd38b1d099c3f","toSide":"left"},
+		{"id":"b89a3b5485fd1372","fromNode":"d55dd38b1d099c3f","fromSide":"left","toNode":"c59af2b734c78722","toSide":"right","label":"匹配"},
+		{"id":"02567bf608122662","fromNode":"f2e54b5485275416","fromSide":"left","toNode":"16bd3398fb0cb300","toSide":"right"},
+		{"id":"8ac8818cdbd77c85","fromNode":"16bd3398fb0cb300","fromSide":"right","toNode":"f2e54b5485275416","toSide":"left","label":"匹配"},
+		{"id":"002b0d296c6f0d48","fromNode":"301cff1641145976","fromSide":"left","toNode":"3ed02b1af0976eba","toSide":"right"},
+		{"id":"57258252e7c4242e","fromNode":"301cff1641145976","fromSide":"left","toNode":"d55dd38b1d099c3f","toSide":"right"},
+		{"id":"02e0e43626b6d4ec","fromNode":"301cff1641145976","fromSide":"left","toNode":"f2e54b5485275416","toSide":"right"},
+		{"id":"b9dcb6a1be97934f","fromNode":"23f580a5bc016392","fromSide":"bottom","toNode":"c59af2b734c78722","toSide":"top","label":"下一层区分"},
+		{"id":"19cb8d84a35caed3","fromNode":"c59af2b734c78722","fromSide":"bottom","toNode":"16bd3398fb0cb300","toSide":"top","label":"下一层区分"},
+		{"id":"2142aab79be277a5","fromNode":"16bd3398fb0cb300","fromSide":"bottom","toNode":"9fa1b2b81f7283c2","toSide":"top","label":"判定为全新问题"},
+		{"id":"ca3b0bbe3fac2d01","fromNode":"9fa1b2b81f7283c2","fromSide":"right","toNode":"301cff1641145976","toSide":"right","label":"写入新的缓存文件"}
+	]
+}
